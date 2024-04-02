@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 600px;
+        width: 600px;
+        background-color: black;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .banner {
+        position: relative;
+        left: -25%;
+        width: 200%;
+        background-color: red;
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+        color: white;
+      }
+      .deg0 {
+        top: 10%;
+      }
+      .deg45 {
+        background-color: blue;
+        top: 10%;
+        transform: rotate(45deg);
+      }
+      .deg135 {
+        background-color: green;
+        top: 20%;
+        transform: rotate(135deg);
+      }
+      .deg175 {
+        background-color: hotpink;
+        top: 30%;
+        transform: rotate(175deg);
+      }
+      .deg90 {
+        background-color: purple;
+        left: -80%;
+        transform: rotate(90deg);
+      }
+      .deg50 {
+        background-color: orange;
+        left: -50%;
+        transform: rotate(50deg);
+      }
+      .banner h1 {
+        display: inline-block;
+        white-space: nowrap;
+        animation: move 10s linear infinite forwards;
+      }
+      .banner h1::after {
+        content: "RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM RIDDIM";
+      }
+      @keyframes move {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner deg0">
+        <h1></h1>
+      </div>
+      <div class="banner deg45">
+        <h1></h1>
+      </div>
+      <div class="banner deg135">
+        <h1></h1>
+      </div>
+
+      <div class="banner deg175">
+        <h1></h1>
+      </div>
+
+      <div class="banner deg90">
+        <h1></h1>
+      </div>
+      <div class="banner deg50">
+        <h1></h1>
+      </div>
+    </div>
+  </body>
+</html>
